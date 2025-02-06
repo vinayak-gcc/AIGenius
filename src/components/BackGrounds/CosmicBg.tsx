@@ -1,19 +1,12 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 
 export default function CosmicBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
-  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    setIsClient(true) // Ensures everything runs only on the client
-  }, [])
-
-  useEffect(() => {
-    if (!isClient) return // Avoid running logic during SSR
-
     const canvas = canvasRef.current
     const container = containerRef.current
     if (!canvas || !container) return
@@ -27,12 +20,12 @@ export default function CosmicBackground() {
       canvas.width = width
       canvas.height = height
     }
-
+    
     const observer = new ResizeObserver(resizeCanvas)
     observer.observe(container)
     resizeCanvas()
 
-    // Create stars AFTER hydration
+    // Create stars
     const stars: { x: number; y: number; size: number; speed: number }[] = []
     for (let i = 0; i < 100; i++) {
       stars.push({
@@ -74,11 +67,11 @@ export default function CosmicBackground() {
     animate()
 
     return () => observer.disconnect()
-  }, [isClient])
+  }, [])
 
   return (
     <div ref={containerRef} className="fixed inset-0 z-[-1]">
-      {isClient && <canvas ref={canvasRef} className="absolute inset-0" />}
+      <canvas ref={canvasRef} className="absolute inset-0" />
     </div>
   )
 }

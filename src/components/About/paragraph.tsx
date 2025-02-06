@@ -2,23 +2,23 @@ import React from "react";
 import Image from "next/image";
 const AboutUs = () => {
   return (
-    <>
+    <div  className="bg-[#211138] -mt-[16rem] z-40 ">
 
       {/* Sparkle */}
-          <div className=" max-w-[46rem] mx-auto rounded-lg ">
-            <div className=" ">
+          <div className=" relative z-40 -mt-20 max-w-[50rem] mx-auto rounded-lg  ">
+            <div className=" pt-20">
                <Image
                  src="/Images/Sparkle.svg"
                  alt="Highlight Logo"
                  width={100}
                  height={100}
-                 className="scale-90 ml-6 mt-10 lg:mt-24 border p-3 animate-border-spin"
+                 className="scale-90 ml-6  border p-3 animate-border-spin"
                />
                </div>
              </div>
 
 
-      <section className="flex flex-col justify-center items-center min-h-screen max-w-[46rem] mx-auto px-8 py-12">
+      <section className="flex relative z-40 flex-col justify-center items-center min-h-screen max-w-[50rem] mx-auto px-8 py-12">
         <div className="max-w-4xl text-white p-10 rounded-2xl shadow-xl border border-purple-500">
           <h2 className="text-4xl font-bold text-[#5c3c70] mb-2">
             At <strong className="text-purple-300">
@@ -54,7 +54,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-    </>
+    </div>
   );
 };
 

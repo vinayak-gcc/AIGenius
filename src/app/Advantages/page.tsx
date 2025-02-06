@@ -13,7 +13,7 @@ const benefits = [
 const AlgeniusSolutions = () => {
   return (
 
-    <section className=" text-white py-16 px-8 -mt-16 md:mt-0 md:px-16 lg:px-24 relative">
+    <section className="flex flex-col items-center justify-center text-white py-16 px-8 -mt-2 md:mt-0 md:px-16 lg:px-24 relative">
 
       <div className="absolute inset-0 bg-grid-gray-900 opacity-20 pointer-events-none"></div>
       <div className="text-center mb-12 relative">

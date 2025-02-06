@@ -2,9 +2,9 @@ import ServicesCards from "./ServicesCards"
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-[#1A0B2E] -mt-4 text-white px-6">
+        <div className="min-h-screen bg-[#211138] -mt-16 md:mt-0 text-white px-6">
             {/* Hero Section */}
-            <div className="max-w-6xl mx-auto space-y-12 scale-90">
+            <div className="max-w-6xl mx-auto space-y-12 scale-95">
                 <div className="space-y-8 text-center pt-12">
 
                     <button className="px-4 py-2 bg-purple-900/50 text-[#d782ff]  text-sm rounded-full border border-2 animate-border-spin">

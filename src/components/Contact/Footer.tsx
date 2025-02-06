@@ -3,7 +3,7 @@
 import Image from "next/image";
 const Footer = () => {
     return (
-        <footer className="w-full bg-[#0D021F] text-gray-400 py-8 flex flex-col items-center">
+        <footer className="w-full 2xl:-mt-16  bg-[#211138] text-gray-400 py-8 flex flex-col items-center">
 
             {/* Logo */}
             <div className="p-3 rounded-xl  scale-90 bg-[#1A0B2E] border animate-border-spin ">

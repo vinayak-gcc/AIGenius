@@ -26,7 +26,7 @@ const ContactForm = () => {
     <>
 
 
-    <div className="min-h-screen flex w-full  flex-col items-center justify-center bg-[#0D021F] px-4">
+    <div className="min-h-screen flex w-full  flex-col items-center justify-center bg-[#211138] px-4">
 
       <div className="w-full font-sans">
         <h2 className="text-2xl font-bold text-center text-3xl mt-4 text-[#D387FF] ">

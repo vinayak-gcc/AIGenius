@@ -7,17 +7,16 @@ export default function FeatureCard() {
 
 
         <div
-            className="scale-90"
+            className="scale-90 bg-[#211138]  "
        
         >
 
             <div className="flex fex-col  mx-auto max-w-[60rem]  p-2 flex items-center justify-center">
 
                 {/* Scalability and Adaptability */}
-                <Card className="relative min-h-[20rem]  mt-2 w-full max-w-5xl border-purple-800/20 rounded-[32px] px-12 py-2 backdrop-blur-sm overflow-hidden"
-                  style={{
-                    background: "linear-gradient(180deg, var(--token-675a22dd-1d94-4c53-b2d8-8feeb6d5836d, rgb(27, 11, 42)) 0%, var(--token-78a614f5-9954-436d-8189-02b092875a4a, rgb(35, 13, 55)) 100%)",
-                }}
+                <Card className="relative min-h-[20rem] bg-[#1d0c2d] mt-2 w-full max-w-[63rem]
+                 border-purple-800/20 rounded-[32px] px-12 py-8  overflow-hidden mx-5"
+               
                 >
                     {/* Grid Background */}
                     <div
@@ -48,7 +47,7 @@ export default function FeatureCard() {
                                     <span className="text-purple-300">Adaptability</span>
                                 </h2>
 
-                                <p className="text-purple-300/60 text-lg leading-relaxed max-w-lg">
+                                <p className="text-purple-200/70 text-lg leading-relaxed max-w-lg">
                                     Scale your operations with our AI solutions designed for flexibility and adaptability. Our architecture
                                     grows with your business, ensuring seamless expansion and innovation.
                                 </p>
@@ -56,7 +55,7 @@ export default function FeatureCard() {
                         </div>
 
                         {/* Moving Circle */}
-                        <div className="rounded-2xl aspect-square flex items-center justify-center">
+                        <div className="rounded-2xl lg:mt-2 mx-auto w-full bg-[#2d0a49] max-h-[20rem] aspect-square flex items-center justify-center">
                             <div className="relative animate-[spin_20s_linear_infinite]">
                                 <Image
                                     src="Images/MovingCircle.svg"
@@ -89,7 +88,7 @@ export default function FeatureCard() {
                             <h2 className="text-purple-300 text-xl font-semibold">
                                 Streamlined <br /> Operations
                             </h2>
-                            <p className="text-purple-200/70 text-md">
+                            <p className="text-purple-200/70 text-md max-w-[28rem] ">
                                 Optimize your workflow with AI-driven <br /> automation, reducing manual effort and maximizing productivity.
                             </p>
                         </div>
@@ -123,8 +122,8 @@ export default function FeatureCard() {
                             <h2 className="text-purple-300 text-xl font-semibold">
                                 Personalized <br /> Experiences
                             </h2>
-                            <p className="text-purple-200/70 text-md">
-                                Deliver personalized experiences to your <br /> customers with AI-powered recommendation <br /> engines and dynamic content generation.
+                            <p className="text-purple-200/70 text-md max-w-[28rem] ">
+                                Deliver personalized experiences to your customers with AI-powered recommendation engines and dynamic content generation.
                             </p>
                         </div>
 

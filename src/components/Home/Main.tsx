@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import CosmicBackground from "../BackGrounds/CosmicBg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -17,13 +18,24 @@ const staggerContainer = {
 
 const Main = () => {
   return (
-    <>
+
+    <div className="min-h-screen z-20">
+      
+      <div className="z-20 ">
+      <CosmicBackground />
+      </div>
+
+    <div className="z-40">
+
+      {/* Main Page Without Planet Arc Image */}
+      <div className="xl:scale-110 ">
+      
       {/* Main Page Logo */}
       <motion.div
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
-        className="absolute mt-14 flex bg-[#371254] justify-center items-center mx-auto w-[42px] h-[42px] rounded-[11px] opacity-100 flex-shrink-0 flex-grow-0 flex-row gap-2 overflow-hidden p-2 relative z-10 box-border border-2 animate-border-spin helvetica"
+        className="absolute mt-14 xl:mt-28 flex bg-[#371254] justify-center items-center mx-auto w-[42px] h-[42px] rounded-[11px] opacity-100 flex-shrink-0 flex-grow-0 flex-row gap-2 overflow-visible p-2 relative z-10 box-border border-2 animate-border-spin helvetica"
       >
         <div className="absolute inset-0 rounded-inherit scale-50">
           <Image src="/Images/Logo.svg" width={30} height={30} alt="Logo" className="w-full h-full " />
@@ -54,24 +66,84 @@ const Main = () => {
         </motion.div>
 
         {/* Buttons */}
-        <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row w-1/2 my-10 justify-center items-center gap-2 mx-2">
-          <motion.button variants={fadeInUp} className="bg-purple-400 font-medium px-20 py-3 rounded-md text-black border-2 border-[#b773e1]">
-            <Link href="About">About Us</Link>
+        <motion.div variants={fadeInUp} 
+        className="flex flex-col sm:flex-row w-1/2 my-10 justify-center items-center gap-2 mx-2">
+          
+          <Link href="#about">
+          <motion.button variants={fadeInUp} 
+          className="bg-purple-400  hover:bg-purple-500 font-medium px-20 py-3 rounded-md text-black border-2 border-[#b773e1]">
+           
+            About Us
+          
           </motion.button>
-
-          <motion.button variants={fadeInUp} className="text-[#b773e1] font-semibold bg-[#3a2448] px-16 py-3 rounded-md border-2 border-[#b773e1]">
-            <Link href="Services">
+          </Link>
+          
+          <Link href="#services">
+          <motion.button variants={fadeInUp} 
+          className="text-[#b773e1] hover:bg-[#2e1243] font-semibold bg-[#3a2448] px-16 py-3 rounded-md border-2 border-[#b773e1]">
+           
             Our Services
-            </Link>
+          
           </motion.button>
+          </Link>
+
         </motion.div>
       </motion.div>
+      </div>
 
       {/* Planet Arc Animation */}
-      <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }} className="absolute mt-36 md:mt-10 animate-[float_6s_ease-in-out_infinite] border-white z-40">
-        <Image src="/Images/PlanetArc.svg" alt="Contact Logo" width={4000} height={400} />
-      </motion.div>
-    </>
+      <div
+       className="flex items-center justify-center  animate-[float_6s_ease-in-out_infinite] z-40">
+        <Image src="/Images/PlanetArc.svg" 
+        alt="Planet Arc" 
+        width={2000}
+         height={5} 
+         className="w-full"
+         />
+      </div>
+
+      {/* Gradients  Start*/}
+
+
+
+    {/* <div
+      className="h-60 -mt-10  w-full"
+      style={{
+        background: `linear-gradient(
+          to bottom,
+          #08040e 25%,
+          #11091c 50%,
+          #190d2a 75%,
+          #211138 100%
+        )`,
+      }}
+    ></div> */}
+
+      <div
+        className="h-80 relative z-30 -mt-6 w-full"
+        style={{
+          background: `linear-gradient(
+            to bottom,
+            #0d0316 0%,
+            #0f051a 11%,
+            #11061e 22%,
+            #140821 33%,
+            #160925 44%,
+            #180b29 56%,
+            #1a0c2d 67%,
+            #1d0e30 78%,
+            #1f0f34 89%,
+            #211138 100%
+          )`,
+        }}
+      ></div>
+
+
+{/* Gradients Close */}
+
+    </div>
+
+    </div>
   );
 };
 

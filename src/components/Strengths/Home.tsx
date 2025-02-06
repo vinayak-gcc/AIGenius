@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-[#1A0B2E] text-white px-6">
+    <div className="min-h-screen bg-[#211138] text-white px-6">
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="space-y-8 text-center pt-12">
