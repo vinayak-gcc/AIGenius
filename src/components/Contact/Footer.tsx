@@ -70,7 +70,7 @@ const Footer = () => {
                 </a>
             </div>
 
-            <div className="text-purple-400 mt-8 mb-4 ">
+            <div className="text-purple-400 mt-8 mb-4 text-sm ">
             © 2024, All Rights Reserved
             </div>
             

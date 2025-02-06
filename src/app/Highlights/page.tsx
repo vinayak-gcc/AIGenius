@@ -19,10 +19,12 @@ export default function page() {
       </div>
 
       {/* Section Title */}
-      <h3 className="text-center text-[#c069ff] mt-10 text-lg">Highlights</h3>
+      <h3 className="text-center text-[#c069ff] mt-10 -mb-24  md:mb-16 text-lg">
+        Highlights
+        </h3>
 
-      {/* Stats Grid */}
-      <div className="grid grid-cols-1 max-w-[56rem] mx-auto md:grid-cols-2 scale-75 md:scale-90 lg:scale-100 mt-16 text-center border 
+      {/* Stats Grid Open */}
+      <div className="grid grid-cols-1  max-w-[56rem] mx-auto md:grid-cols-2 scale-75 md:scale-90 lg:scale-100 mt-20 text-center border 
        border-[#2e1243] font-sans -mt-10 md:mt-0">
 
         {/* First Stat */}
@@ -59,14 +61,15 @@ export default function page() {
 
       </div>
 
-      <div className="border border-t-0 border-[#2e1243] max-w-[56rem] mx-auto text-center font-sans scale-75 -mt-40 md:-mt-10  lg:mt-0 md:scale-90 lg:scale-100 ">
+      <div className="border border-t-0 border-[#2e1243] max-w-[56rem] mx-auto text-center font-sans scale-75 -mt-40 md:-mt-10 
+       lg:mt-0 md:scale-90 lg:scale-100 ">
         <p className="text-[6.5rem] md:text-[9.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
           15 000 +
         </p>
         <p className="text-purple-300 mb-8  text-4xl -mt-8">Satisfied Clients</p>
       </div>
 
-      {/* Stats Grid */}
+      {/* Stats Grid Close */}
 
     </div>
 

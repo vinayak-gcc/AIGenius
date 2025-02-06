@@ -55,7 +55,7 @@ export default function FeatureCard() {
                         </div>
 
                         {/* Moving Circle */}
-                        <div className="rounded-2xl lg:mt-2 mx-auto w-full bg-[#2d0a49] max-h-[20rem] aspect-square flex items-center justify-center">
+                        <div className="rounded-2xl Grid-bg lg:mt-2 mx-auto w-full bg-[#2d0a49] max-h-[20rem] aspect-square flex items-center justify-center">
                             <div className="relative animate-[spin_20s_linear_infinite]">
                                 <Image
                                     src="Images/MovingCircle.svg"
@@ -93,7 +93,8 @@ export default function FeatureCard() {
                             </p>
                         </div>
 
-                        <div className="bg-purple-950/50 rounded-2xl max-h-[18rem] aspect-square flex items-center justify-center">
+                        <div className="bg-purple-950/50 Grid-bg rounded-2xl max-h-[18rem] aspect-square flex items-center justify-center">
+                            
                             <div className="relative ">
                                 {/* StarinCircle Image */}
                                 <div className="rounded-2xl aspect-square flex items-center justify-center">
@@ -128,7 +129,7 @@ export default function FeatureCard() {
                         </div>
 
                         {/* Stack Image */}
-                        <div className="bg-purple-950/50 rounded-2xl p-8 max-h-[18rem] aspect-square flex items-center justify-center">
+                        <div className="bg-purple-950/50 rounded-2xl  Grid-bg p-8 max-h-[18rem] aspect-square flex items-center justify-center">
                             <div className="relative animate-[float_4s_ease-in-out_infinite]  ">
                                 <Image
                                     src="Images/Stack.svg"

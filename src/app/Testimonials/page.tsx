@@ -18,7 +18,7 @@ export default function Testimonials() {
       logo: (
         <Image 
         src="/Images/SarahLogo.svg"
-        alt="EmilyLogo"
+        alt="SarahLogo"
         width={120}
         height={50}
         />
@@ -50,7 +50,7 @@ export default function Testimonials() {
       logo: (
         <Image 
         src="/Images/DavidLogo.svg"
-        alt="EmilyLogo"
+        alt="DavidLogo"
         width={120}
         height={50}
         />
@@ -66,7 +66,7 @@ export default function Testimonials() {
       logo: (
         <Image 
         src="/Images/MichaelLogo.svg"
-        alt="EmilyLogo"
+        alt="MichaelLogo"
         width={120}
         height={50}
         />
@@ -82,28 +82,27 @@ export default function Testimonials() {
 
   return (
     <div className="min-h-screen flex items-center justify-center -mt-8 md:mt-0 bg-[#211138] py-16 px-4 sm:px-6 lg:px-8">
-      
       <div className="max-w-7xl mx-auto mx-14 scale-95">
         <h2 className="text-[#d782ff] text-md font-medium -mt-4 md:mt-10 text-center mb-12">
-          {/* AI Solutions Text */}
-        <span className="h-[1px] w-12 bg-purple-400/30 text-purple-300 " />
-        <div className="absolute mt-10 flex justify-center items-center mx-auto rounded-[11px] opacity-100 flex-shrink-0 flex-grow-0 flex-row gap-2 overflow-hidden p-2 relative z-10 box-border">
+          <span className="h-[1px] w-12 bg-purple-400/30 text-purple-300 " />
+          <div className="absolute mt-10 flex justify-center items-center mx-auto rounded-[11px] opacity-100 flex-shrink-0 flex-grow-0 flex-row gap-2 overflow-hidden p-2 relative z-10 box-border">
             <span className="h-[2px] w-12 bg-purple-400/30" />
             <span className="text-lg text-[#ae68cc] ">Testimonials</span>
             <span className="h-[2px] w-12 bg-purple-400/30" />
-        </div>
-        <span className="h-[1px] w-12 bg-purple-400/30 text-purple-300 " />
+          </div>
+          <span className="h-[1px] w-12 bg-purple-400/30 text-purple-300 " />
+        </h2>
 
-          </h2>
         <div className="grid md:grid-cols-2 border border-[#2e1243] ">
-         
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-[#1E1433] border border-[#2e1243] p-8 flex flex-col gap-6">
               {testimonial.logo}
               <p className="text-[#9c5ab2] leading-relaxed max-w-[29rem] ">
                 {testimonial.text}
-                </p>
+              </p>
               <div className="flex items-center gap-4">
+                {/* Add a star icon or image here */}
+                <span className="text-yellow-400">&#9733;</span>
                 <img
                   src={testimonial.author.image || "/placeholder.svg"}
                   alt={testimonial.author.name}
@@ -114,13 +113,14 @@ export default function Testimonials() {
                   <div className="text-[#9c5ab2] text-sm">{testimonial.author.role}</div>
                 </div>
               </div>
+              {/* Add another star at the end of the testimonial */}
+              <div className="flex justify-end mt-4">
+                <span className="text-yellow-400">&#9733;</span>
+              </div>
             </div>
           ))}
-
         </div>
       </div>
-     
     </div>
   )
 }
-
