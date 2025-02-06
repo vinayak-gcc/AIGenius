@@ -12,6 +12,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(10px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      
+      },
+      fontFamily: {
+        sans: ['DM Sans', 'sans-serif'], // Use "font-sans" class in Tailwind
+      },
     },
   },
   plugins: [],

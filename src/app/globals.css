@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0c0316;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0c0316;
     --foreground: #ededed;
   }
 }
@@ -17,5 +20,29 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+}
+
+.helvetica {
+  font-family: "Helvetica", sans-serif;
+}
+
+.DM-Sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+@keyframes border-spin {
+  0% { border-color: #341d44; }
+  25% { border-color: #ffffff; }
+  50% { border-color: #341d44; }
+  75% { border-color: #ffffff; }
+  100% { border-color: #341d44; }
+}
+
+.animate-border-spin {
+  animation: border-spin 2s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
 }
