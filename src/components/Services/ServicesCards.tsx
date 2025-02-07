@@ -30,32 +30,32 @@ export default function ServicesCards() {
         <FeatureCard
           imageSrc="/Images/FourSquares.svg"
           title="Predictive Analytics"
-          description="Attain valuable foresight and make data-driven decisions with unwavering confidence."
+          description="Forecast market movements and make data-driven investment decisions."
         />
         <FeatureCard
           imageSrc="/Images/Automation.svg"
-          title="Intelligent Automation"
-          description="Transform your operations to streamline repetitive tasks and minimize manual effort."
+          title="AI-Powered Risk Management"
+          description="Identify potential risks and prevent fraud in real time."
         />
         <FeatureCard
           imageSrc="/Images/Clover.svg"
-          title="Personalization Engines"
-          description="Analyze user behavior, preferences, and demographics to tailor recommendations."
+          title="Automated Trading"
+          description="Enhance algorithmic trading with real-time AI insights."
         />
         <FeatureCard
           imageSrc="/Images/FourHearts.svg"
-          title="Management Solutions"
-          description="Mitigate risks and make informed decisions with our comprehensive risk management solutions."
+          title="Personalized Banking & Investment"
+          description="AI-driven recommendations for clients based on financial behaviors."
         />
         <FeatureCard
           imageSrc="/Images/FourCircles.svg"
-          title="Chatbot Development"
-          description="Enhance customer engagement and deliver instant responses with AI-powered chatbots."
+          title="Regulatory Compliance Automation"
+          description="Ensure compliance with AI-powered document analysis and reporting."
         />
         <FeatureCard
           imageSrc="/Images/HalfMoon.svg"
-          title="Supply Chain Optimization"
-          description="Optimize your supply chain operations for maximum efficiency and cost savings."
+          title="Intelligent Automation"
+          description="Transform your operations to streamline repetitive tasks and minimize manual effort."
         />
       </div>
 

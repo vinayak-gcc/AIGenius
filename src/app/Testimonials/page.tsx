@@ -23,7 +23,7 @@ export default function Testimonials() {
         height={50}
         />
       ),
-      text: "Implementing AI solutions from Algenius has revolutionized our business operations. With their predictive analytics tools, we've gained invaluable insights into market trends, allowing us to make strategic decisions with confidence. Our efficiency has skyrocketed, and we're thrilled with the results!",
+      text: "Implementing AI solutions from Algenius has revolutionized our business operations.",
       author: {
         image: "/Images/Sarah.jpg",
         name: "Sarah Johnson",
@@ -39,11 +39,11 @@ export default function Testimonials() {
         height={50}
         />
       ),
-      text: "Thanks to the AI personalization engine provided by Algenius, we've seen a remarkable increase in customer engagement and satisfaction. The tailored experiences have strengthened our brand loyalty and driven significant revenue growth. Highly recommended!",
+      text: "Our AI-powered chatbot now handles over 80% of customer inquiries, reducing response times significantly.",
       author: {
         image: "/Images/Emily.jpg",
         name: "Emily Rodriguez",
-        role: "Operations Manager",
+        role: "Customer Engagement Head",
       },
     },
     {
@@ -55,11 +55,11 @@ export default function Testimonials() {
         height={50}
         />
       ),
-      text: "The AI chatbot developed by Algenius has transformed our customer support experience. It's efficient, responsive, and provides instant solutions to our clients' queries round the clock. Our customers love the personalized assistance, and it has significantly improved our service ratings.",
+      text: "AIgenius FinTech transformed our risk management strategy, giving us real-time fraud detection that saved millions.",
       author: {
         image: "/Images/David.jpg",
         name: "David Thompson",
-        role: "Sales Executive",
+        role: "CFO of Investment Firm",
       },
     },
     {
@@ -71,11 +71,11 @@ export default function Testimonials() {
         height={50}
         />
       ),
-      text: "Integrating AI solutions from Algenius has been a game-changer for our supply chain management. Their optimization tools have helped us streamline processes, reduce costs, and improve overall efficiency. We're now better equipped to meet customer demands and stay ahead in our industry.",
+      text: "The AI ML agent provided market insights that improved our portfolio performance by 30%.",
       author: {
         image: "/Images/Michael.jpg",
         name: "Michael Chen",
-        role: "Supply Chain Director",
+        role: "Portfolio Manager",
       },
     },
   ]

@@ -32,7 +32,7 @@ const ContactForm = () => {
         <h2 className="text-2xl font-bold text-center text-3xl mt-4 text-[#D387FF] ">
           Let&apos;s Get Started!</h2>
         <p className="text-center text-md my-4 text-gray-400 mb-6">
-          We&apos;re eager to connect and assist with your <br/> project or address any inquiries you have.
+         Let’s Build the Future of FinTech Together!
         </p>
 
       </div>

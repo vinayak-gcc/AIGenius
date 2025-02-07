@@ -28,9 +28,9 @@ export default function ContactSection() {
             {/* Contact Info */}
             <div className="my-6 w-full max-w-[40rem] ">
                 {[
-                    { title: "Help Center", value: "hello@algenius.com" },
+                    { title: "Email", value: "hello@algenius.com" },
                     { title: "Phone", value: "+1 (505) 929-2090" },
-                    { title: "Fax", value: "+1 (505) 929-2090" },
+                    
                 ].map(({ title, value }, index) => (
                     <div
                         key={index}

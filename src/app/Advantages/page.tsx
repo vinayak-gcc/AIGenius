@@ -1,16 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import Globe from '../../components/Others/Globe'
 
 const benefits = [
-  { title: "Efficiency", description: "With our AI-powered solutions, adaptability becomes a cornerstone of your business strategy, ensuring you're always ready to seize new opportunities.", image: "/Images/Efficiency.svg" },
-  { title: "Personalization", description: "Tailor your communication strategy to deliver personalized messages that align with customer preferences and behavior.", image: "/Images/Personalization.svg" },
-  { title: "Insights", description: "Access actionable insights and predictive analytics to fuel informed decision-making and strategic planning. Stay ahead of the curve with real-time data analysis.", image: "/Images/Insights.svg" },
-  { title: "Scalability", description: "Scale your operations seamlessly, maintaining quality standards while controlling costs, to navigate the ever-changing market landscape with agility and resilience.", image: "/Images/Scalability.svg" },
-  { title: "Adaptability", description: "AI services continuously learn and adapt based on feedback and new data, ensuring they stay relevant and effective in dynamic environments.", image: "/Images/Adaptability.svg" },
-  { title: "Precision", description: "By analyzing complex data sets quickly and accurately, AI enables businesses to make informed choices that drive competitive advantage.", image: "/Images/Precision.svg" }
+  { title: "Efficiency", description: "AI automation reduces processing times and operational costs.", image: "/Images/Efficiency.svg" },
+  { title: "Accuracy", description: "Real-time financial insights eliminate guesswork.", image: "/Images/Accuracy.svg" },
+  { title: "Scalability", description: " Grow your financial services without increasing overhead.", image: "/Images/Scalability.svg" },
+  { title: "Security", description: "AI-powered fraud detection ensures regulatory compliance. ", image: "/Images/Security.svg" },
 ];
 
+
+
 const AlgeniusSolutions = () => {
+
   return (
 
     <section className="flex flex-col items-center justify-center text-white py-16 px-8 -mt-2 md:mt-0 md:px-16 lg:px-24 relative">
@@ -20,7 +23,7 @@ const AlgeniusSolutions = () => {
         <button className="px-4 py-2 bg-purple-900/50 text-[#d782ff] text-sm rounded-full border border-2 animate-border-spin">
           Advantages
         </button>
-        <h1 className="text-5xl my-6 scale-90 md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent">
+        <h1 className="text-5xl mb-6 sm:mb-10 mt-14 scale-90 md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent">
           Explore the Benefits of
           <br />
           Algenius Solutions
@@ -28,7 +31,7 @@ const AlgeniusSolutions = () => {
       </div>
 
       {/*  */}
-      <div className="grid grid-cols-1 mx-16 md:grid-cols-2 gap-2 relative ">
+      <div className="grid grid-cols-1 md:mx-16 md:grid-cols-2 gap-2 relative ">
         {benefits.map((benefit, index) => (
           <div key={index} className="p-4 rounded-xl gap-y-4 shadow-lg max-w-[40rem] scale-90 space-y-4 hover:shadow-purple-500/50 transition">
 
@@ -43,9 +46,10 @@ const AlgeniusSolutions = () => {
       </div>
       
       {/* Global Reach Card */}
-      <div className="relative flex bg-[#1a0f2a] my-14 mx-2 text-white p-10 rounded-2xl shadow-lg max-w-4xl mx-auto border border-purple-900">
+      <div className="relative flex flex-col sm:flex-row bg-[#1a0f2a] my-14 mx-2
+       text-white p-10 rounded-2xl shadow-lg max-w-4xl mx-auto border border-purple-900">
         
-        <div className="w-1/2">
+        <div className="sm:w-1/2">
 
 
         {/* Global Reach Tag */}
@@ -66,21 +70,31 @@ const AlgeniusSolutions = () => {
         </p>
 
         {/* Contact Button */}
+        <Link href="#contact">
         <button className="mt-5 px-6 py-2 border border-purple-400 rounded-lg text-purple-400 animate-border-spin  hover:bg-purple-500 hover:text-white transition">
           Contact Us
         </button>
+        </Link>
         
      
         </div>
+        
+        {/* Moving Cicle*/}
 
-        <div className="w-1/2 flex justify-center items-center">
+        {/* <div className="w-1/2 flex justify-center items-center">
           <Image 
           src="/Images/MovingCircle.svg"
           alt="Moving Planet"
           width={300}
           height={300}
           />
+        </div> 
+
+        {/* 3D Globe */}
+        <div className="flex mt-6 sm:mt-0 md:mt-6 lg:-mt-2 xl:mt-6">
+        <Globe />
         </div>
+
 
       </div>
 

@@ -18,39 +18,33 @@ const AboutUs = () => {
              </div>
 
 
-      <section className="flex relative z-40 flex-col justify-center items-center min-h-screen max-w-[50rem] mx-auto px-8 py-12">
+      <section className="flex relative z-40 flex-col justify-center items-center min-h-screen max-w-[48rem] mx-auto px-8 py-12">
         <div className="max-w-4xl text-white p-10 rounded-2xl shadow-xl border border-purple-500">
           <h2 className="text-4xl font-bold text-[#5c3c70] mb-2">
-            At <strong className="text-purple-300">
-              AIgenius</strong>{" "}, we&apos;re on a mission
+          <strong className="text-purple-300"> AI-ML</strong>{" "}  Driven, Finance Solutions
           </h2>
           <p className="text-4xl text-[#5c3c70] ">
-            to push the boundaries of AI{" "}
-            <span className="text-purple-400">🚀</span> innovation. Founded by a
-            team of passionate experts, our journey began with a vision{" "}
-            <strong className="text-purple-300">to transform industries</strong>{" "}
-            through the power of artificial intelligence.
+          Founded by industry experts, <br/> <strong className="text-purple-300">
+          AIgenius FinTech</strong>{" "}, is committed to transforming financial services through AI innovation. 
+          We develop cutting-edge AI models that predict market trends, automate financial operations, and personalize banking experiences.
           </p>
 
           <p className="mt-6 text-4xl text-[#5c3c70]">
-            With a relentless pursuit of excellence and a commitment to delivering
-            tangible results,{" "}
-            <strong className="text-purple-300">
-              we&apos;ve established ourselves as leaders in the field
-            </strong>
-            . Our diverse team brings together expertise from across disciplines
-            to craft bespoke AI solutions tailored to your needs.
+          At AIgenius FinTech, we leverage <strong className="text-purple-300">AI </strong>and  machine learning to revolutionize
+         financial operations. 
+          Our AI-driven solutions <strong className="text-purple-300">enhance</strong> decision-making,
+          <strong className="text-purple-300">optimize</strong> risk management, 
+          and unlock new growth opportunities in banking, trading, and financial services.
           </p>
 
           <p className="mt-6 text-4xl text-[#5c3c70]">
-            Whether you&apos;re seeking to{" "}
-            <strong className="text-purple-300">
-              streamline operations, enhance customer experiences, or unlock
-              opportunities
-            </strong>
-            , we&apos;re here to make it happen. Join us as we continue to redefine
-            what&apos;s possible in the world of AI.
+          Our <strong className="text-purple-300">mission</strong>{" "},
+          is to bring intelligence, automation, and efficiency to financial systems,
+           reducing human error and maximizing profitability.
           </p>
+
+    
+
         </div>
       </section>
 

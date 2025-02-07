@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const menuRef = useRef<HTMLUListElement>(null);
 
   // Detect scroll position
@@ -28,24 +29,34 @@ const Navigation = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Detect mobile screen
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640); // Tailwind's 'sm' breakpoint
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <nav className="fixed bottom-12 left-1/2 -translate-x-1/2 z-50 text-xl">
       <div className="relative flex items-center justify-center text-center">
         {isScrolled && (
           <button
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="bg-[#22112f] p-3 rounded-full text-purple-300 transition-all duration-300 ease-in"
+            className="bg-[#22112f] p-3 rounded-full -mt-1.5 text-purple-300 transition-all duration-300 ease-in"
             aria-label="Toggle menu"
           >
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         )}
 
-        {(menuOpen || !isScrolled) && (
+        {(menuOpen || (!isScrolled && !isMobile)) && (
           <ul
             ref={menuRef}
-            className="flex flex-col shadow-none  rounded-none sm:flex-row items-center justify-center gap-8 text-base mx-6 text-purple-300 py-4 px-6 rounded-full font-light
-              bg-[#22112f]/60 backdrop-blur-md border border-white/20 shadow-lg
+            className="flex flex-col shadow-none rounded-none sm:rounded-full sm:flex-row items-center justify-center gap-8 text-base mx-6
+             text-purple-300 py-4 px-6 rounded-full font-light bg-[#22112f]/60 backdrop-blur-md border border-white/20 shadow-lg
               absolute bottom-full mb-2 sm:static"
           >
             {[

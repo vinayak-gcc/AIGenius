@@ -48,7 +48,9 @@ const Main = () => {
         <div className="absolute mt-10 flex justify-center items-center mx-auto rounded-[11px] opacity-100 flex-shrink-0 flex-grow-0 flex-row gap-2 overflow-hidden p-2 relative z-10 box-border">
           <div className="text-purple-300 mb-8 flex items-center gap-4">
             <span className="h-[1px] w-12 bg-purple-400/30" />
-            <span className="text-lg">AI Solutions</span>
+            <span className="text-lg">
+              AI-Powered FinTech Innovation
+               </span>
             <span className="h-[1px] w-12 bg-purple-400/30" />
           </div>
         </div>
@@ -61,8 +63,8 @@ const Main = () => {
           AIgenius
         </motion.div>
 
-        <motion.div variants={fadeInUp} className="text-[#9763b6] px-2 text-xl text-center">
-          From revolutionizing industries to redefining <br /> possibilities, we&apos;re at the forefront of innovation.
+        <motion.div variants={fadeInUp} className="text-[#9763b6] px-2 text-xl text-center max-w-[40rem]">
+        Transforming Finance with Artificial Intelligence
         </motion.div>
 
         {/* Buttons */}
@@ -71,7 +73,7 @@ const Main = () => {
           
           <Link href="#about">
           <motion.button variants={fadeInUp} 
-          className="bg-purple-400  hover:bg-purple-500 font-medium px-20 py-3 rounded-md text-black border-2 border-[#b773e1]">
+          className="bg-purple-400   hover:bg-purple-500 font-medium px-16 py-3 lg:px-20 rounded-md text-black border-2 border-[#b773e1]">
            
             About Us
           
@@ -80,7 +82,7 @@ const Main = () => {
           
           <Link href="#services">
           <motion.button variants={fadeInUp} 
-          className="text-[#b773e1] hover:bg-[#2e1243] font-semibold bg-[#3a2448] px-16 py-3 rounded-md border-2 border-[#b773e1]">
+          className="text-[#b773e1] hover:bg-[#2e1243] font-semibold bg-[#3a2448] px-12  sm:px-14 lg:px-20 py-3 rounded-md border-2 border-[#b773e1]">
            
             Our Services
           

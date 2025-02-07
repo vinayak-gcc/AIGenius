@@ -6,7 +6,7 @@ export default function page() {
     <div className="relative  bg-[#211138] border border-[#211138] text-white  rounded-2xl   mx-auto  ">
 
       {/* Top Icon */}
-      <div className="flex justify-center  -mt-6 my-10">
+      <div className="flex justify-center  sm:-mt-6 -mt-10 my-10">
         <div className="border p-3 border-[#2e1243] flex my-10 items-center justify-center rounded-lg animate-border-spin">
           <Image
             src="/Images/Highlight.svg"
@@ -19,7 +19,7 @@ export default function page() {
       </div>
 
       {/* Section Title */}
-      <h3 className="text-center text-[#c069ff] mt-10 -mb-24  md:mb-16 text-lg">
+      <h3 className="text-center text-[#c069ff] mt-10 -mb-28  md:mb-16 text-lg">
         Highlights
         </h3>
 
