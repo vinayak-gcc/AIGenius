@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const benefits = [
   { title: "Risk Assessment", description: "Analyze and mitigate financial risks efficiently.", image: "/Images/Efficiency.svg" },
-  { title: "Portfolio Managemen", description: "Optimize investment strategies using AI models.", image: "/Images/Accuracy.svg" },
+  { title: "Portfolio Management", description: "Optimize investment strategies using AI models.", image: "/Images/Accuracy.svg" },
   { title: "Customer Service", description: "AI-powered chatbots for instant financial advisory.", image: "/Images/Scalability.svg" },
   { title: "Fraud Prevention", description: "Real-time fraud detection and transaction monitoring. ", image: "/Images/Security.svg" },
 ];
